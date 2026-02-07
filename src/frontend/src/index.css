@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Calming pastel color palette - Light mode */
+        --background: 0.98 0.01 220;
+        --foreground: 0.25 0.02 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.02 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.02 240;
+        
+        --primary: 0.65 0.08 220;
+        --primary-foreground: 0.99 0 0;
+        
+        --secondary: 0.95 0.02 220;
+        --secondary-foreground: 0.35 0.03 240;
+        
+        --muted: 0.96 0.01 220;
+        --muted-foreground: 0.55 0.02 240;
+        
+        --accent: 0.92 0.03 200;
+        --accent-foreground: 0.35 0.03 240;
+        
+        --destructive: 0.60 0.20 15;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.90 0.02 220;
+        --input: 0.90 0.02 220;
+        --ring: 0.65 0.08 220;
+        
+        /* Calm color scale */
+        --calm-50: 0.98 0.01 220;
+        --calm-100: 0.95 0.02 220;
+        --calm-200: 0.90 0.03 220;
+        --calm-300: 0.82 0.05 220;
+        --calm-400: 0.70 0.08 220;
+        --calm-500: 0.60 0.10 220;
+        --calm-600: 0.50 0.09 220;
+        --calm-700: 0.40 0.07 230;
+        --calm-800: 0.30 0.05 240;
+        --calm-900: 0.20 0.03 240;
+        
+        --chart-1: 0.65 0.12 180;
+        --chart-2: 0.70 0.10 220;
+        --chart-3: 0.60 0.08 260;
+        --chart-4: 0.75 0.09 140;
+        --chart-5: 0.68 0.11 200;
+    }
+
+    .dark {
+        --background: 0.18 0.03 240;
+        --foreground: 0.95 0.01 220;
+        
+        --card: 0.22 0.03 240;
+        --card-foreground: 0.95 0.01 220;
+        
+        --popover: 0.20 0.03 240;
+        --popover-foreground: 0.95 0.01 220;
+        
+        --primary: 0.70 0.08 220;
+        --primary-foreground: 0.15 0.03 240;
+        
+        --secondary: 0.28 0.04 240;
+        --secondary-foreground: 0.95 0.01 220;
+        
+        --muted: 0.25 0.03 240;
+        --muted-foreground: 0.65 0.02 220;
+        
+        --accent: 0.35 0.05 230;
+        --accent-foreground: 0.95 0.01 220;
+        
+        --destructive: 0.55 0.18 15;
+        --destructive-foreground: 0.95 0.01 220;
+        
+        --border: 0.30 0.04 240;
+        --input: 0.30 0.04 240;
+        --ring: 0.60 0.08 220;
+        
+        /* Calm color scale - Dark mode */
+        --calm-50: 0.95 0.01 220;
+        --calm-100: 0.90 0.02 220;
+        --calm-200: 0.82 0.03 220;
+        --calm-300: 0.70 0.05 220;
+        --calm-400: 0.60 0.07 220;
+        --calm-500: 0.50 0.08 220;
+        --calm-600: 0.42 0.07 230;
+        --calm-700: 0.32 0.05 240;
+        --calm-800: 0.24 0.04 240;
+        --calm-900: 0.18 0.03 240;
+        
+        --chart-1: 0.60 0.10 180;
+        --chart-2: 0.65 0.08 220;
+        --chart-3: 0.55 0.07 260;
+        --chart-4: 0.70 0.08 140;
+        --chart-5: 0.63 0.09 200;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .calm-gradient {
+        background: linear-gradient(135deg, 
+            oklch(var(--calm-100)) 0%, 
+            oklch(var(--calm-200)) 50%, 
+            oklch(var(--calm-300)) 100%);
+    }
+    
+    .calm-gradient-dark {
+        background: linear-gradient(135deg, 
+            oklch(var(--calm-900)) 0%, 
+            oklch(var(--calm-800)) 50%, 
+            oklch(var(--calm-700)) 100%);
+    }
+}

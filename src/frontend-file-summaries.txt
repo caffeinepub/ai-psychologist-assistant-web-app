@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates authentication flow, profile setup, and chat interface with theme provider and toast notifications.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for managing backend interactions including user profiles, conversation history, and static messages with proper caching and invalidation.",
+  "frontend/src/components/Header.tsx": "Application header with branding, user avatar, and authentication controls featuring smooth login/logout functionality.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying disclaimer about emotional support vs medical advice and attribution with caffeine.ai link.",
+  "frontend/src/components/WelcomeScreen.tsx": "Landing page for unauthenticated users showcasing app features with empathetic messaging and login prompt.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile creation, collecting user's name for personalized experience with proper Dialog component props.",
+  "frontend/src/components/ChatInterface.tsx": "Main chat interface with message history, typing indicators, and intelligent response simulation based on user input keywords.",
+  "frontend/src/components/MessageBubble.tsx": "Individual message bubble component with distinct styling for user and assistant messages including timestamps.",
+  "frontend/src/components/TypingIndicator.tsx": "Animated typing indicator with three bouncing dots to show assistant is composing a response.",
+  "frontend/src/components/CalmModeDialog.tsx": "Guided breathing exercise dialog with animated circle and 4-4-6 breathing pattern for anxiety relief.",
+  "frontend/src/stores/calmModeStore.ts": "Zustand store for managing calm mode dialog open/close state across components.",
+  "frontend/src/index.css": "Global styles with calming pastel OKLCH color system optimized for both light and dark modes with custom calm color scale.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with calm color palette, custom shadows, and design tokens for cohesive therapeutic aesthetic."
+}
